@@ -1,0 +1,5 @@
+*.stTheme.cache
+*.sublime-workspace
+*.tmPreferences.cache
+*.tmlanguage.cache
+.DS_Store

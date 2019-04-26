@@ -1,0 +1,458 @@
+{
+  "name": "Snazzy",
+  "homepage": "https://github.com/Briles/snazzy-sublime",
+  "author": "Brian Reilly (https://github.com/Briles)",
+  "originalAuthor": "Sindre Sorhus (https://github.com/sindresorhus)",
+  "variables": {
+    "jrczgv": "#282a36",
+    "udbyvm": "#f8f8f0",
+    "ssokdn": "#f8f8f2",
+    "prxnfx": "#3B3A32",
+    "fmexju": "#44475a",
+    "gbwzbd": "#effb7b",
+    "vkzaub": "#000000",
+    "ejkfgb": "#222218",
+    "nevvkm": "#9D550FB0",
+    "whfpkh": "#F8F8F2A5",
+    "izlvqe": "#686868",
+    "lpyulv": "#f3f99d",
+    "azfpvd": "#bd93f9",
+    "xghezs": "#f9aa7a",
+    "kuvnzq": "#ff6ac1",
+    "oqlbvt": "#ff5c57",
+    "zmesmw": "#9aedfe",
+    "jbnfvi": "#57c7ff",
+    "daarxi": "#5af78e",
+    "ggusgj": "#6be5fd",
+    "pbecek": "#F8F8F0",
+    "wfxdwf": "#CFCFC2",
+    "vydckc": "#E6DB74",
+    "dixxrg": "#F83333",
+    "wqwtic": "#f1f1f0",
+    "zaasjj": "#FFB86C",
+    "hzwvig": "#8BE9FD",
+    "zptepk": "#FF79C6",
+    "inqwtl": "#6272A4",
+    "cfqrox": "#50FA7B",
+    "nihjpy": "#BD93F9",
+    "ozaphl": "#F8F8F2",
+    "zmnqqm": "#ffffff"
+  },
+  "globals": {
+    "background": "var(jrczgv)",
+    "caret": "var(udbyvm)",
+    "foreground": "var(ssokdn)",
+    "invisibles": "var(prxnfx)",
+    "line_highlight": "var(fmexju)",
+    "selection": "var(fmexju)",
+    "find_highlight": "var(gbwzbd)",
+    "find_highlight_foreground": "var(vkzaub)",
+    "selection_border": "var(ejkfgb)",
+    "active_guide": "var(nevvkm)",
+    "brackets_foreground": "var(whfpkh)",
+    "brackets_options": "underline",
+    "bracket_contents_foreground": "var(whfpkh)",
+    "bracket_contents_options": "underline",
+    "tags_options": "stippled_underline"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "foreground": "var(izlvqe)",
+      "font_style": ""
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "var(lpyulv)"
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "foreground": "var(azfpvd)"
+    },
+    {
+      "name": "Built-in constant",
+      "scope": "constant.language",
+      "foreground": "var(azfpvd)"
+    },
+    {
+      "name": "User-defined constant",
+      "scope": "constant.character, constant.other",
+      "foreground": "var(azfpvd)"
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "font_style": ""
+    },
+    {
+      "name": "Ruby's @variable",
+      "scope": "variable.other.readwrite.instance",
+      "font_style": "",
+      "foreground": "var(xghezs)"
+    },
+    {
+      "name": "String interpolation",
+      "scope": "constant.character.escaped, constant.character.escape, string source, string source.ruby",
+      "font_style": "",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Ruby Regexp",
+      "scope": "source.ruby string.regexp.classic.ruby,source.ruby string.regexp.mod-r.ruby",
+      "font_style": "",
+      "foreground": "var(oqlbvt)"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "font_style": "",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Storage type",
+      "scope": "storage.type",
+      "font_style": "italic",
+      "foreground": "var(zmesmw)"
+    },
+    {
+      "name": "Storage Type Namespace",
+      "scope": "storage.type.namespace",
+      "font_style": "italic",
+      "foreground": "var(zmesmw)"
+    },
+    {
+      "name": "Storage Type Class",
+      "scope": "storage.type.class",
+      "font_style": "italic",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Class name",
+      "scope": "entity.name.class",
+      "font_style": "underline",
+      "foreground": "var(zmesmw)"
+    },
+    {
+      "name": "Meta Path",
+      "scope": "meta.path",
+      "font_style": "underline",
+      "foreground": "var(jbnfvi)"
+    },
+    {
+      "name": "Inherited class",
+      "scope": "entity.other.inherited-class",
+      "font_style": "italic underline",
+      "foreground": "var(zmesmw)"
+    },
+    {
+      "name": "Function name",
+      "scope": "entity.name.function",
+      "font_style": "",
+      "foreground": "var(daarxi)"
+    },
+    {
+      "name": "Function argument",
+      "scope": "variable.parameter",
+      "font_style": "italic",
+      "foreground": "var(xghezs)"
+    },
+    {
+      "name": "Tag name",
+      "scope": "entity.name.tag",
+      "font_style": "",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Tag attribute",
+      "scope": "entity.other.attribute-name",
+      "font_style": "",
+      "foreground": "var(daarxi)"
+    },
+    {
+      "name": "Library function",
+      "scope": "support.function",
+      "font_style": "",
+      "foreground": "var(zmesmw)"
+    },
+    {
+      "name": "Library constant",
+      "scope": "support.constant",
+      "font_style": "",
+      "foreground": "var(ggusgj)"
+    },
+    {
+      "name": "Library class/type",
+      "scope": "support.type, support.class",
+      "font_style": "italic",
+      "foreground": "var(jbnfvi)"
+    },
+    {
+      "name": "Library variable",
+      "scope": "support.other.variable",
+      "font_style": ""
+    },
+    {
+      "name": "Support Other Namespace",
+      "scope": "support.other.namespace",
+      "font_style": "italic",
+      "foreground": "var(jbnfvi)"
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "background": "var(kuvnzq)",
+      "font_style": "",
+      "foreground": "var(pbecek)"
+    },
+    {
+      "name": "Invalid deprecated",
+      "scope": "invalid.deprecated",
+      "background": "var(azfpvd)",
+      "foreground": "var(pbecek)"
+    },
+    {
+      "name": "JSON String",
+      "scope": "meta.structure.dictionary.json string.quoted.double.json",
+      "foreground": "var(wfxdwf)"
+    },
+    {
+      "name": "diff.header",
+      "scope": "meta.diff, meta.diff.header",
+      "foreground": "var(izlvqe)"
+    },
+    {
+      "name": "diff.deleted",
+      "scope": "markup.deleted",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "diff.inserted",
+      "scope": "markup.inserted",
+      "foreground": "var(daarxi)"
+    },
+    {
+      "name": "diff.changed",
+      "scope": "markup.changed",
+      "foreground": "var(vydckc)"
+    },
+    {
+      "scope": "constant.numeric.line-number.find-in-files - match",
+      "foreground": "var(azfpvd)"
+    },
+    {
+      "scope": "entity.name.filename",
+      "foreground": "var(vydckc)"
+    },
+    {
+      "scope": "message.error",
+      "foreground": "var(dixxrg)"
+    },
+    {
+      "name": "JSON Punctuation",
+      "scope": "punctuation.definition.string.begin.json - meta.structure.dictionary.value.json, punctuation.definition.string.end.json - meta.structure.dictionary.value.json",
+      "foreground": "var(wqwtic)"
+    },
+    {
+      "name": "JSON Structure",
+      "scope": "meta.structure.dictionary.json string.quoted.double.json",
+      "foreground": "var(zmesmw)"
+    },
+    {
+      "name": "JSON String",
+      "scope": "meta.structure.dictionary.value.json string.quoted.double.json",
+      "foreground": "var(lpyulv)"
+    },
+    {
+      "name": "JSON: 6 deep",
+      "scope": "meta meta meta meta meta meta meta.structure.dictionary.value string",
+      "foreground": "var(daarxi)"
+    },
+    {
+      "name": "JSON: 5 deep",
+      "scope": "meta meta meta meta meta meta.structure.dictionary.value string",
+      "foreground": "var(xghezs)"
+    },
+    {
+      "name": "JSON: 4 deep",
+      "scope": "meta meta meta meta meta.structure.dictionary.value string",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "JSON: 3 deep",
+      "scope": "meta meta meta meta.structure.dictionary.value string",
+      "foreground": "var(azfpvd)"
+    },
+    {
+      "name": "JSON: 2 deep",
+      "scope": "meta meta meta.structure.dictionary.value string",
+      "foreground": "var(daarxi)"
+    },
+    {
+      "name": "JSON:  1 deep",
+      "scope": "meta meta.structure.dictionary.value string",
+      "foreground": "var(xghezs)"
+    },
+    {
+      "name": "Markup: strike",
+      "scope": "markup.strike",
+      "font_style": "italic",
+      "foreground": "var(zaasjj)"
+    },
+    {
+      "name": "Markup: bold",
+      "scope": "markup.bold",
+      "font_style": "bold",
+      "foreground": "var(zaasjj)"
+    },
+    {
+      "name": "Markup: italic",
+      "scope": "markup.italic",
+      "font_style": "italic",
+      "foreground": "var(zaasjj)"
+    },
+    {
+      "name": "Markdown: heading",
+      "scope": "markup.heading",
+      "foreground": "var(hzwvig)"
+    },
+    {
+      "name": "Markdown: List Items Punctuation",
+      "scope": "punctuation.definition.list_item.markdown",
+      "foreground": "var(zptepk)"
+    },
+    {
+      "name": "Markdown: Blockquote",
+      "scope": "markup.quote",
+      "font_style": "italic",
+      "foreground": "var(inqwtl)"
+    },
+    {
+      "name": "Markdown: Blockquote Punctuation",
+      "scope": "punctuation.definition.blockquote.markdown",
+      "font_style": "italic",
+      "background": "var(inqwtl)",
+      "foreground": "var(inqwtl)"
+    },
+    {
+      "name": "Markdown: Separator",
+      "scope": "meta.separator",
+      "foreground": "var(inqwtl)"
+    },
+    {
+      "name": "Markup: raw inline",
+      "scope": "text.html.markdown markup.raw.inline",
+      "foreground": "var(cfqrox)"
+    },
+    {
+      "name": "Markup: underline",
+      "scope": "markup.underline",
+      "font_style": "underline",
+      "foreground": "var(nihjpy)"
+    },
+    {
+      "name": "Markup: Raw block",
+      "scope": "markup.raw.block",
+      "foreground": "var(wfxdwf)"
+    },
+    {
+      "name": "Markdown: Raw Block fenced source",
+      "scope": "markup.raw.block.fenced.markdown source",
+      "foreground": "var(ozaphl)"
+    },
+    {
+      "name": "Markdown: Fenced Bode Block",
+      "scope": "punctuation.definition.fenced.markdown, variable.language.fenced.markdown",
+      "font_style": "italic",
+      "foreground": "var(inqwtl)"
+    },
+    {
+      "name": "Markdown: Fenced Language",
+      "scope": "variable.language.fenced.markdown",
+      "font_style": "italic",
+      "foreground": "var(inqwtl)"
+    },
+    {
+      "name": "Punctuation Accessor",
+      "scope": "punctuation.accessor",
+      "foreground": "var(zptepk)"
+    },
+    {
+      "name": "Meta Function Return Type",
+      "scope": "meta.function.return-type",
+      "foreground": "var(zptepk)"
+    },
+    {
+      "name": "Punctuation Section Block Begin",
+      "scope": "punctuation.section.block.begin",
+      "foreground": "var(zmnqqm)"
+    },
+    {
+      "name": "Punctuation Section Block End",
+      "scope": "punctuation.section.block.end",
+      "foreground": "var(zmnqqm)"
+    },
+    {
+      "name": "Punctuation Section Embedded Begin",
+      "scope": "punctuation.section.embedded.begin",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Punctuation Section Embedded End",
+      "scope": "punctuation.section.embedded.end",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Punctuation Separator Namespace",
+      "scope": "punctuation.separator.namespace",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Variable Function",
+      "scope": "variable.function",
+      "foreground": "var(daarxi)"
+    },
+    {
+      "name": "Variable Other",
+      "scope": "variable.other",
+      "foreground": "var(zmnqqm)"
+    },
+    {
+      "name": "Variable Language",
+      "scope": "variable.language",
+      "foreground": "var(azfpvd)"
+    },
+    {
+      "name": "Entity Name Module Ruby",
+      "scope": "entity.name.module.ruby",
+      "foreground": "var(zmesmw)"
+    },
+    {
+      "name": "Entity Name Constant Ruby",
+      "scope": "entity.name.constant.ruby",
+      "foreground": "var(azfpvd)"
+    },
+    {
+      "name": "Support Function Builtin Ruby",
+      "scope": "support.function.builtin.ruby",
+      "foreground": "var(zmnqqm)"
+    },
+    {
+      "name": "Storage Type Namespace CS",
+      "scope": "storage.type.namespace.cs",
+      "foreground": "var(kuvnzq)"
+    },
+    {
+      "name": "Entity Name Namespace CS",
+      "scope": "entity.name.namespace.cs",
+      "foreground": "var(zmesmw)"
+    }
+  ]
+}
